@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+</head>
+<body class="pa2 bg-near-white">
+	<div class="flex flex-column measure ml-auto mr-auto">
+		<label name="language_selector">Language: <select onclick="Language.show(this.selectedIndex)" onchange="Language.show(this.selectedIndex)">
+			                <option selected>Bangla</option>
+			                <option>Hindi</option>
+			                <option>Oriya</option>
+			            </select>
+	    </label>
+    	<stacked-widget id="Language" class="mt2">
+    		<div class="bangla">
+    			<label name="utsav_selector">Utsav <select onclick="banglaNotice.show(this.selectedIndex)" onchange="banglaNotice.show(this.selectedIndex)">
+    				<option selected>Durga Puja - Shashthi</option>
+    				<option>Durga Puja - Saptami</option>
+    				<option>Durga Puja - Ashtami</option>
+    				<option>Durga Puja - Navami</option>
+    				<option>Durga Puja - Dasami</option>
+    			</select></label>
+    			<stacked-widget id="banglaNotice" class="db mt4">
+    				<div name="DurgaPujaShashthi">
+    					<div class="flex justify-between">
+    						<div class="tl">
+    							আশ্বিনী শুক্লা ষষ্ঠী
+    						</div>
+    						<div class="tr">
+    							01/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>আশ্রমের ত্রিতলে শ্রীশ্রী ঠাকুর ঘরে সকাল ৯:৩০ মিনিটে আরতি হইবে।</li>
+    						<li>বেলা ১০ ঘটিকায় শ্রীশ্রীপ্রভুদের ঘরে সভা ও পাদুকা পূজা হইবে।</li>
+    						<li>পাদুকার আরতির পরে শ্রীশ্রী হরমোহিনী স্মৃতি মন্দিরে আরতি হইবে।</li>
+    						<li>শ্রীশ্রী প্রভুদের দ্বিপ্রহরে ভোগের পর সকলে অন্নপ্রসাদ পাইবেন।</li>
+    						<li>রাত্রে শ্রীশ্রী প্রভুদের ঘরে সভার পর আরতি হইবে।</li>
+    						<li>দুই বেলাই শ্রীশ্রী প্রভুদের ঘরে পাঠ কীর্ত্তন হইবে।</li>
+    					</ul>
+    				</div>
+    				<div name="DurgaPujaSaptami">
+    					<div class="flex justify-between">
+    						<div class="tl">
+    							আশ্বিনী শুক্লা সপ্তমি
+    						</div>
+    						<div class="tr">
+    							02/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>আশ্রমের ত্রিতলে শ্রীশ্রী ঠাকুর ঘরে সকাল ৯:৩০ মিনিটে আরতি হইবে।</li>
+    						<li>বেলা ১০ ঘটিকায় শ্রীশ্রীপ্রভুদের ঘরে সভা ও পাদুকা পূজা হইবে।</li>
+    						<li>পাদুকার আরতির পরে শ্রীশ্রী হরমোহিনী স্মৃতি মন্দিরে আরতি হইবে।</li>
+    						<li>শ্রীশ্রী প্রভুদের দ্বিপ্রহরে ভোগের পর সকলে অন্নপ্রসাদ পাইবেন।</li>
+    						<li>রাত্রে শ্রীশ্রী প্রভুদের ঘরে সভার পর আরতি হইবে।</li>
+    						<li>দুই বেলাই শ্রীশ্রী প্রভুদের ঘরে পাঠ কীর্ত্তন হইবে।</li>
+    					</ul>
+    				</div>
+    				<div name="DurgaPujaAshtami">
+    					<div class="flex justify-between">
+    						<div class="tl">
+    							আশ্বিনী শুক্লা অষ্টমি
+    						</div>
+    						<div class="tr">
+    							03/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>আশ্রমের ত্রিতলে শ্রীশ্রী ঠাকুর ঘরে সকাল ৯:৩০ মিনিটে আরতি হইবে।</li>
+    						<li>বেলা ১০ ঘটিকায় শ্রীশ্রীপ্রভুদের ঘরে সভা ও পাদুকা পূজা হইবে।</li>
+    						<li>পাদুকার আরতির পরে শ্রীশ্রী হরমোহিনী স্মৃতি মন্দিরে আরতি হইবে।</li>
+    						<li>শ্রীশ্রী প্রভুদের দ্বিপ্রহরে ভোগের পর সকলে অন্নপ্রসাদ পাইবেন।</li>
+    						<li>রাত্রে শ্রীশ্রী প্রভুদের ঘরে সভার পর আরতি হইবে।</li>
+    						<li>দুই বেলাই শ্রীশ্রী প্রভুদের ঘরে পাঠ কীর্ত্তন হইবে।</li>
+    						<li>মহাষ্টমীর দিন রাত্রের সভায় "শ্রীশ্রী প্রভু মহারাজজীর স্বহস্ত লিখিত গ্রন্থ" দর্শন হইবে।</li>
+    						<li>গ্রন্থ দর্শনের পর সভা বিশ্রাম ও আরতি হইবে।</li>
+    					</ul>
+    				</div>
+    				<div name="DurgaPujaNavami">
+    					<div class="flex justify-between">
+    						<div class="tl">
+    							আশ্বিনী শুক্লা নবমি
+    						</div>
+    						<div class="tr">
+    							04/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>আশ্রমের ত্রিতলে শ্রীশ্রী ঠাকুর ঘরে সকাল ৯:৩০ মিনিটে আরতি হইবে।</li>
+    						<li>বেলা ১০ ঘটিকায় শ্রীশ্রীপ্রভুদের ঘরে সভা ও পাদুকা পূজা হইবে।</li>
+    						<li>পাদুকার আরতির পরে শ্রীশ্রী হরমোহিনী স্মৃতি মন্দিরে আরতি হইবে।</li>
+    						<li>শ্রীশ্রী প্রভুদের দ্বিপ্রহরে ভোগের পর সকলে অন্নপ্রসাদ পাইবেন।</li>
+    						<li>রাত্রে শ্রীশ্রী প্রভুদের ঘরে সভার পর আরতি হইবে।</li>
+    						<li>দুই বেলাই শ্রীশ্রী প্রভুদের ঘরে পাঠ কীর্ত্তন হইবে।</li>
+    					</ul>
+    				</div>
+    				<div name="DurgaPujaDasami">
+    					<div class="flex justify-between">
+    						<div class="tl">
+    							আশ্বিনী শুক্লা দশমি
+    						</div>
+    						<div class="tr">
+    							05/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>আশ্রমের ত্রিতলে শ্রীশ্রী ঠাকুর ঘরে সকাল ৯:৩০ মিনিটে আরতি হইবে।</li>
+    						<li>বেলা ১০ ঘটিকায় শ্রীশ্রীপ্রভুদের ঘরে সভা ও পাদুকা পূজা হইবে।</li>
+    						<li>পাদুকার আরতির পরে শ্রীশ্রী হরমোহিনী স্মৃতি মন্দিরে আরতি হইবে।</li>
+    						<li>শ্রীশ্রী প্রভুদের দ্বিপ্রহরে ভোগের পর সকলে অন্নপ্রসাদ পাইবেন।</li>
+    						<li>রাত্রে শ্রীশ্রী প্রভুদের ঘরে সভার পর আরতি হইবে।</li>
+    						<li>দুই বেলাই শ্রীশ্রী প্রভুদের ঘরে পাঠ কীর্ত্তন হইবে।</li>
+    						<li>''বিজয়া দশমীর দিন'' শ্রীশ্রী পাদুকা পুজার পর সকলে শ্রীশ্রী পাদুকায় পুষ্পাঞ্জলি প্রদান করিবেন।</li>
+    					</ul>
+    				</div>
+    			</stacked-widget>
+    		</div>
+    		<div class="hindi">
+    			<label name="utsav_selector">Utsav <select onclick="hindiNotice.show(this.selectedIndex)">
+    				<option selected>Durga Puja - Shashthi</option>
+    				<option>Durga Puja - Saptami</option>
+    				<option>Durga Puja - Ashtami</option>
+    				<option>Durga Puja - Navami</option>
+    				<option>Durga Puja - Dasami</option>
+    			</select></label>
+    			<stacked-widget id="hindiNotice" class="db mt4">
+    				<div name="DurgaPujaShashthi">
+    					<div class="flex justify-between">
+    						<div class="tl">
+    							आश्विन शुक्ल षष्ठी
+    						</div>
+    						<div class="tr">
+    							01/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>तीन तल्ले के ठाकुर गृह में प्रातः ९: ३० बजे आरति होगि।</li>
+    						<li>प्रातः १० बजे प्रभुगृह में सभा व पादुका पुजा होगी।</li>
+    						<li>पादुका आरति के बाद श्रीश्री हरमोहिनी स्मृति मंदिर में आरति होगी।</li>
+    						<li>प्रभुजी के दोपहर के भोग के पश्चात् भक्तजन अन्नप्रसाद पायेंगे।</li>
+    						<li>रात में प्रभुगृह में सभा के पश्चात् आरति होगी।</li>
+    						<li>दोनो वक्त प्रभुगृह में सभा होगा।</li>
+    					</ul>
+    				</div>
+    				<div name="DurgaPujaSaptami">
+    					<div class="flex justify-between">
+    						<div class="tl">
+    							आश्विन शुक्ल सप्तमि
+    						</div>
+    						<div class="tr">
+    							02/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>तीन तल्ले के ठाकुर गृह में प्रातः ९: ३० बजे आरति होगि।</li>
+    						<li>प्रातः १० बजे प्रभुगृह में सभा व पादुका पुजा होगी।</li>
+    						<li>पादुका आरति के बाद श्रीश्री हरमोहिनी स्मृति मंदिर में आरति होगी।</li>
+    						<li>प्रभुजी के दोपहर के भोग के पश्चात् भक्तजन अन्नप्रसाद पायेंगे।</li>
+    						<li>रात में प्रभुगृह में सभा के पश्चात् आरति होगी।</li>
+    						<li>दोनो वक्त प्रभुगृह में सभा होगा।</li>
+    					</ul>
+    				</div>
+    				<div name="DurgaPujaAshtami">
+    					<div class="flex justify-between">
+    						<div class="tl">
+    							आश्विन शुक्ल अष्टमि
+    						</div>
+    						<div class="tr">
+    							03/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>तीन तल्ले के ठाकुर गृह में प्रातः ९: ३० बजे आरति होगि।</li>
+    						<li>प्रातः १० बजे प्रभुगृह में सभा व पादुका पुजा होगी।</li>
+    						<li>पादुका आरति के बाद श्रीश्री हरमोहिनी स्मृति मंदिर में आरति होगी।</li>
+    						<li>प्रभुजी के दोपहर के भोग के पश्चात् भक्तजन अन्नप्रसाद पायेंगे।</li>
+    						<li>रात में प्रभुगृह में सभा के पश्चात् आरति होगी।</li>
+    						<li>दोनो वक्त प्रभुगृह में सभा होगा।</li>
+    						<li>अष्टमी के दिन, रात के सभा में प्रभुमहाराजजी द्वारा लिखित मूल ग्रन्थ का दर्शन होगा।</li>
+    					</ul>
+    				</div>
+    				<div name="DurgaPujaNavami">
+    					<div class="flex justify-between">
+    						<div class="tl">
+								आश्विन शुक्ल नवमि
+    						</div>
+    						<div class="tr">
+    							04/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>तीन तल्ले के ठाकुर गृह में प्रातः ९: ३० बजे आरति होगि।</li>
+    						<li>प्रातः १० बजे प्रभुगृह में सभा व पादुका पुजा होगी।</li>
+    						<li>पादुका आरति के बाद श्रीश्री हरमोहिनी स्मृति मंदिर में आरति होगी।</li>
+    						<li>प्रभुजी के दोपहर के भोग के पश्चात् भक्तजन अन्नप्रसाद पायेंगे।</li>
+    						<li>रात में प्रभुगृह में सभा के पश्चात् आरति होगी।</li>
+    						<li>दोनो वक्त प्रभुगृह में सभा होगा।</li>
+    					</ul>
+    				</div>
+    				<div name="DurgaPujaDasami">
+    					<div class="flex justify-between">
+    						<div class="tl">
+    							आश्विन शुक्ल दशमि
+    						</div>
+    						<div class="tr">
+    							05/10/2022
+    						</div>
+    					</div>
+    					<ul class="mt2">
+    						<li>तीन तल्ले के ठाकुर गृह में प्रातः ९: ३० बजे आरति होगि।</li>
+    						<li>प्रातः १० बजे प्रभुगृह में सभा व पादुका पुजा होगी।</li>
+    						<li>पादुका आरति के बाद श्रीश्री हरमोहिनी स्मृति मंदिर में आरति होगी।</li>
+    						<li>प्रभुजी के दोपहर के भोग के पश्चात् भक्तजन अन्नप्रसाद पायेंगे।</li>
+    						<li>रात में प्रभुगृह में सभा के पश्चात् आरति होगी।</li>
+    						<li>दोनो वक्त प्रभुगृह में सभा होगा।</li>
+    						<li>''विजया दशमी''  के दिन पादुका पूजन के पश्चात् भक्तजन पूष्पांजलि प्रदान करेंगे।</li>
+    					</ul>
+    				</div>
+    			</stacked-widget>
+    		</div>
+    		<div class="oriya">
+    			Oriya
+    		</div>
+    	</stacked-widget>
+	</div>
+	<script type="text/javascript">
+		class StackedWidget extends HTMLElement {
+		  render() { // (1)
+		    // this.innerHTML = `<div class='page' name='page0'></div>`
+		  }
+
+		  connectedCallback() { // (2)
+		    if (!this.rendered) {
+		      this.render();
+		      this.rendered = true;
+		      this.currentIndex = 0
+		      this.pageCount = 1
+		      this.show(0)
+		    }
+		  }
+
+		  static get observedAttributes() { // (3)
+		    return ['a', 'currentIndex', 'currentPageName'];
+		  }
+
+		  attributeChangedCallback(name, oldValue, newValue) { // (4)
+		  	if (name == 'a') {
+		  		show(newValue)
+			}
+		    // this.render();
+		  }
+
+		  show(index) {
+		  	self = this
+	  		let nextSibling = self.firstElementChild;
+
+	  		let i=0;
+			while(nextSibling) {
+				if (i!==index)
+					nextSibling.classList.add('dn')
+				else
+					nextSibling.classList.remove('dn')
+
+			    nextSibling = nextSibling.nextElementSibling;
+			    i += 1
+			}
+		  }
+
+		  addPage() {
+		  	let page = document.createElement("div")
+		  	page.setAttribute('name', 'page' + this.pageCount)
+		  	page.classList.add('page')
+		  	page.classList.add('dn')
+		  	this.appendChild(page)
+		  	this.pageCount += 1
+		  }
+		}
+
+		customElements.define('stacked-widget', StackedWidget);
+
+		Array.from(document.getElementsByName("language_selector")).forEach(function(selector){
+			selector.click()
+		})
+
+		Array.from(document.getElementsByName("utsav_selector")).forEach(function(selector){
+			selector.click()
+		})
+		</script>
+</body>
+</html>
